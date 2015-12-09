@@ -6,23 +6,23 @@ Gem::Specification.new do |s|
   ## Leave these as is they will be modified for you by the rake gemspec task.
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
-  s.name              = 'cucumber-sinatra'
+  s.name              = 'cucumber-grape'
   s.version           = '0.5.0'
-  s.date              = '2012-04-01'
-  s.rubyforge_project = 'cucumber-sinatra'
+  s.date              = '2015-12-09'
+  s.rubyforge_project = 'cucumber-grape'
 
-  s.summary     = "Initialize a cucumber environment for sinatra"
-  s.description = "This little gem will help you to initialize a cucumber environment for a sinatra application. It will generate the required files from templates."
+  s.summary     = "Initialize a cucumber environment for grape"
+  s.description = "This little gem will help you to initialize a cucumber environment for a grape application. It will generate the required files from templates."
 
-  s.authors  = ["Bernd Ahlers"]
-  s.email    = 'bernd@tuneafish.de'
-  s.homepage = 'http://github.com/bernd/cucumber-sinatra'
+  s.authors  = ["Mathieu Jobin"]
+  s.email    = 'mathieu@venuenext.com'
+  s.homepage = 'http://github.com/mathieujobin/cucumber-grape'
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
   s.require_paths = %w[lib]
 
-  s.executables = ["cucumber-sinatra"]
+  s.executables = ["cucumber-grape"]
 
   s.rdoc_options = ["--charset=UTF-8"]
   s.extra_rdoc_files = %w[README.md LICENSE]
@@ -35,15 +35,15 @@ Gem::Specification.new do |s|
     LICENSE
     README.md
     Rakefile
-    bin/cucumber-sinatra
-    cucumber-sinatra.gemspec
-    lib/cucumber/sinatra.rb
-    lib/cucumber/sinatra/generators.rb
-    lib/cucumber/sinatra/templates/app.rbt
-    lib/cucumber/sinatra/templates/config.ru
-    lib/cucumber/sinatra/templates/features/step_definitions/web_steps.rbt
-    lib/cucumber/sinatra/templates/features/support/env.rbt
-    lib/cucumber/sinatra/templates/features/support/paths.rbt
+    bin/cucumber-grape
+    cucumber-grape.gemspec
+    lib/cucumber/grape.rb
+    lib/cucumber/grape/generators.rb
+    lib/cucumber/grape/templates/app.rbt
+    lib/cucumber/grape/templates/config.ru
+    lib/cucumber/grape/templates/features/step_definitions/web_steps.rbt
+    lib/cucumber/grape/templates/features/support/env.rbt
+    lib/cucumber/grape/templates/features/support/paths.rbt
   ]
   # = MANIFEST =
 

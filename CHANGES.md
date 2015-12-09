@@ -15,14 +15,14 @@ ChangeLog
 
 # 0.2.4
 * Use the `RACK_ENV` environment variable to set the
-  sinatra environment to 'test'. (See issue #1)
+  grape environment to 'test'. (See issue #1)
 
 # 0.2.3
 * Create a custom world class to avoid SystemStackError
   exceptions with capybara.
 
 # 0.2.2
-* Set sinatra environment to :test in the env.rb template.
+* Set grape environment to :test in the env.rb template.
 * Fix indentation in the app.rb template.
 
 # 0.2.1

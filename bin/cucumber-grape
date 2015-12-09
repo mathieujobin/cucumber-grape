@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'cucumber/grape'
+require 'cucumber/grape/generators'
+
+Cucumber::Grape::Generators.run_cli Dir.pwd, File.basename(__FILE__), Cucumber::Grape::VERSION, ARGV

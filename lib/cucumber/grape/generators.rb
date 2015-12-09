@@ -1,7 +1,7 @@
 require 'templater'
 
 module Cucumber
-  module Sinatra
+  module Grape
     module Generators
       extend Templater::Manifold
 
@@ -11,8 +11,8 @@ module Cucumber
         end
 
         desc <<-DESC
-          Initialize a cucumber environment for a sinatra application.
-            cucumber-sinatra MyApp lib/myapp.rb
+          Initialize a cucumber environment for a grape application.
+            cucumber-grape MyApp lib/myapp.rb
         DESC
 
         first_argument :app_class, :required => true, :desc => 'Application class'
@@ -31,7 +31,7 @@ module Cucumber
         end
       end
 
-      desc "Generators to simplify the usage of cucumber with sinatra."
+      desc "Generators to simplify the usage of cucumber with grape."
       add :init, InitGenerator
     end
   end

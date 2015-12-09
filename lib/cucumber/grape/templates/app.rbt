@@ -1,0 +1,15 @@
+require 'grape/base'
+
+class <%= app_class -%> < Grape::API
+    version 'v1', using: :path
+    format :json
+    prefix :api
+
+    desc 'root'
+    get '/' do
+      {text: 'Hello <%= app_class -%>!'}
+    end
+
+  # start the server if ruby file executed directly
+  run! if app_file == $0
+end
