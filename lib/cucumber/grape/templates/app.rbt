@@ -1,4 +1,4 @@
-require 'grape/base'
+require 'grape'
 
 class <%= app_class -%> < Grape::API
     version 'v1', using: :path
@@ -9,7 +9,4 @@ class <%= app_class -%> < Grape::API
     get '/' do
       {text: 'Hello <%= app_class -%>!'}
     end
-
-  # start the server if ruby file executed directly
-  run! if app_file == $0
 end
